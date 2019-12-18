@@ -2,23 +2,32 @@
   .col
     h1 見守りアプリ (Watching)
 
-    h2 Policy
+    h2.mt-4 Policy
 
     ul
-      li おじいさん、おばあさんでも使える UI
-      li マネタイズは考えない
+      li (見守られる人) おじいさん、おばあさんでも使える UI
+      li とりあえずマネタイズは考えない
       li
         | (裏テーマ) Android 最新技術の学習
       li
         | (裏テーマ) ライフログアプリのベースにする
   
-    h2 ラフ
+    h2.mt-4 ラフ
 
-    h2 Study
+    = link_to "https://res.cloudinary.com/kyuuki/image/upload/v1576663348/watching/DSC_0358.jpg" do
+      img.img-thumbnail src="https://res.cloudinary.com/kyuuki/image/upload/v1576663348/watching/DSC_0358.jpg"
+
+    = link_to "https://res.cloudinary.com/kyuuki/image/upload/v1576663342/watching/DSC_0359.jpg" do
+      img.img-thumbnail src="https://res.cloudinary.com/kyuuki/image/upload/v1576663342/watching/DSC_0359.jpg"
+
+    h2.mt-4 Study
 
     ul
       li = link_to "GDG DevFest Tokyo 2019 Slides", "https://gdg-tokyo.connpass.com/event/137666/presentation/", target: "_blank"
-      li Kotlin
+      li
+        | Kotlin
+        | &nbsp;-&nbsp;
+        = link_to "[Udacity (Advanced Android with Kotlin)]", "https://classroom.udacity.com/courses/ud940", target: "_blank"
       ul
         li Coroutine
         li 拡張関数 (Extension)
@@ -36,5 +45,7 @@
         li Notification
       li Networking (Retrofit + OkHttp)
        
-    h2 TODO
+    h2.mt-4 TODO
+
+    p Trello か Google スプレッドシートで管理
 
