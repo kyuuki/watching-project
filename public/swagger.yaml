@@ -13,9 +13,17 @@ basePath: /v1
 tags:
   - name: users
     description: Operations about user
+  - name: events
+    description: Operations about event
 schemes:
   - https
   - http
+# https://swagger.io/docs/specification/2-0/authentication/api-keys/
+securityDefinitions:
+  APIKeyHeader:
+    type: apiKey
+    in: header
+    name: x-api-key
 paths:
   /user:
     post:
@@ -34,7 +42,7 @@ paths:
           schema:
             type: object
             properties:
-              phoneNumber:
+              phone_number:
                 type: string
       responses:
         '200':
@@ -44,8 +52,62 @@ paths:
             properties:
               id:
                 type: integer
-              key:
+              api_key:
                 type: string
+    put:
+      tags:
+        - users
+      summary: Update user
+      security:
+        - APIKeyHeader: []
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: body
+          required: true
+          schema:
+            type: object
+            properties:
+              id:
+                type: integer
+              nick_name:
+                type: string
+      responses:
+        '200':
+          description: successful operation
+          schema:
+            type: object
+  /events:
+    get:
+      tags:
+        - events
+      summary: Update user
+      security:
+        - APIKeyHeader: []
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: body
+          required: true
+          schema:
+            type: object
+            properties:
+              id:
+                type: integer
+      responses:
+        '200':
+          description: successful operation
+          schema:
+            type: array
+            items:
+              properties:
+                user_id:
+                  type: integer
+                description: 
+                  type: string
+
 externalDocs:
   description: Find out more about Watching
   url: 'https://watching-project.herokuapp.com/'
