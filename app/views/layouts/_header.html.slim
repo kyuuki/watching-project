@@ -1,0 +1,17 @@
+/ https://getbootstrap.com/docs/4.0/examples/navbars/
+nav.navbar.navbar-expand-lg.navbar-dark.fixed-top.bg-dark
+  .container
+    = link_to "/", { class: "navbar-brand" } do
+      | 見守りアプリ (Watching)
+
+    button.navbar-toggler type="button" data-toggle="collapse" data-target="#navbars" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation"
+      span.navbar-toggler-icon
+
+    .collapse.navbar-collapse id="navbars"
+      ul.navbar-nav.mr-auto
+        li.nav-item
+          = link_to "#progress", { class: "nav-link" } do
+            | Progress
+        li.nav-item
+          = link_to "#study", { class: "nav-link" } do
+            | Study
