@@ -1,18 +1,18 @@
 .row
   .col
-    h1 見守りアプリ (Watching)
+    h1.mt-4 見守りアプリ (Watching)
 
-    h2.mt-4 Policy
+    h2.my-4 Policy
 
     ul
       li
-        | (見守られる人) おじいさん、おばあさんでも使える UI
+        | （見守られる人）おじいさん、おばあさんでも使える UI
       li とりあえずマネタイズは考えない
       li
-        | (裏テーマ) Android 最新技術の学習
+        | （裏テーマ）Android 最新技術の学習
       li
-        | (裏テーマ) ライフログアプリのベースにする
-  
+        | （裏テーマ）ライフログアプリのベースにする
+
     h2.mt-4 Documents
 
     ul
@@ -20,7 +20,7 @@
         = link_to "https://docs.google.com/spreadsheets/d/1WjJ5yyUyuWbXwtWADzd-frwpQCabvWl7nvbbtvSgEaI/edit#gid=0", target: "_blank" do
           | 機能一覧
       li
-        = link_to "https://trello.com/b/584I9iZP/%E8%A6%8B%E5%AE%88%E3%82%8A%E3%82%A2%E3%83%97%E3%83%AA"
+        = link_to "https://trello.com/b/584I9iZP/%E8%A6%8B%E5%AE%88%E3%82%8A%E3%82%A2%E3%83%97%E3%83%AA", target: "_blank"
           | Trello (Tasks)
       li
         = link_to "https://drive.google.com/drive/folders/1ipPXwNsiX-Mtg8-yQqoSG0fEU39cHA5Q?usp=sharing", target: "_blank" do
@@ -31,158 +31,17 @@
     ul
       li = link_to "Android (Kotlin)", "https://github.com/tanvimittal/WatchingAndroid", target: "_blank"
       li = link_to "Server (Spring Boot/Kotlin)", "https://github.com/kyuuki/watching-spring", target: "_blank"
+      li = link_to "Project (Rails)", "https://github.com/kyuuki/watching-project", target: "_blank"
 
-    h2.mt-4 Server
+    h2.mt-4 API
 
     ul
+      li
+        = link_to "https://app.swaggerhub.com/apis-docs/kyuuki/Watching/1.0.0", target: "_blank"
+          | API Document
+      li
+        = link_to "https://app.swaggerhub.com/apis/kyuuki/Watching/1.0.0", target: "_blank"
+          | SwaggerHub
       li
         = link_to "/redoc.html", target: "_blank"
-          | API Document
-
-    h2.my-4#progress Progress
-
-    .row
-      .col-4.my-2
-        .card
-          .card-header
-            h3 2020-01-19
-          .card-body
-            ul
-              li
-                | (Tanvi) Android アプリのベース作成 (Kotlin)
-              li
-                | (Tanvi) 電話番号を取得
-              li
-                | (小林) サーバーのベース作成 (Spring Boot/Kotlin)
-              li
-                | (小林) ルートにアクセスすると固定の JSON を返す
-
-      .col-4.my-2
-        .card
-          .card-header
-            h3 2020-02-02
-          .card-body
-            ul
-              li
-                | (Tanvi) Retrofit を使った通信を試す
-              li
-                | (小林) Swagger を使って API ドキュメント作成
-
-      .col-4.my-2
-        .card
-          .card-header
-            h3 2020-02-16
-          .card-body
-            ul
-              li
-                | (Tanvi) ソースコードをきれいに
-              li
-                | (小林) AWS に JDK インストールしてサーバーを動かす
-              li
-                | (Tanvi, 小林) MVVM 学習 (https://www.youtube.com/watch?v=_T4zjIEkGOM)
-              li
-                | (Tanvi, 小林) MVVM 学習 (https://www.youtube.com/watch?v=d7UxPYxgBoA) 途中
-
-      .col-4.my-2
-        .card
-          .card-header
-            h3 2020-02-23
-          .card-body
-            ul
-              li
-                | (Tanvi) ソースコードをきれいに (Retrofit 関連)
-              li
-                | (Tanvi) CircleCI 着手
-              li
-                | (小林) 3 API 作成して、固定文字列を返すように
-              li
-                | (小林) 機能一覧作成
-
-      .col-4.my-2
-        .card
-          .card-header
-            h3 2020-03-21
-          .card-body
-            ul
-              li
-                | (Tanvi) Notification Sample
-              li
-                | (小林) データベースアクセス
-
-      .col-4.my-2
-        .card
-          .card-header
-            h3 2020-04-12
-          .card-body
-            ul
-              li
-                | (Tanvi) ユーザー情報登録 (ニックネーム登録)
-              li
-                | (小林) ログ出力
-              li
-                | (小林) ユーザー情報登録 API
-          
-    h2.mt-4 スケジュール
-
-    = link_to "https://res.cloudinary.com/kyuuki/image/upload/v1581858377/watching/IMG_20200216_191058.jpg" do
-      img.img-thumbnail src="https://res.cloudinary.com/kyuuki/image/upload/v1581858377/watching/IMG_20200216_191058.jpg"
-          
-    h2.mt-4 ラフ
-
-    = link_to "https://res.cloudinary.com/kyuuki/image/upload/v1576663348/watching/DSC_0358.jpg" do
-      img.img-thumbnail src="https://res.cloudinary.com/kyuuki/image/upload/v1576663348/watching/DSC_0358.jpg"
-
-    = link_to "https://res.cloudinary.com/kyuuki/image/upload/v1576663342/watching/DSC_0359.jpg" do
-      img.img-thumbnail src="https://res.cloudinary.com/kyuuki/image/upload/v1576663342/watching/DSC_0359.jpg"
-
-    h2.mt-4#study Study
-
-    ul
-      li = link_to "GDG DevFest Tokyo 2019 Slides", "https://gdg-tokyo.connpass.com/event/137666/presentation/", target: "_blank"
-      li Udacity
-      ul
-        li
-          = link_to "Kotlin Bootcamp for Programmers", "https://www.udacity.com/course/kotlin-bootcamp-for-programmers--ud9011", target: "_blank"
-        li
-          = link_to "Developing Android Apps with Kotlin", "https://www.udacity.com/course/developing-android-apps-with-kotlin--ud9012", target: "_blank"
-        li
-          = link_to "Advanced Android with Kotlin", "https://www.udacity.com/course/advanced-android-with-kotlin--ud940", target: "_blank"
-          br
-          | Notification, Testing
-        li
-          = link_to "Firebase in a Weekend: Android", "https://www.udacity.com/course/firebase-in-a-weekend-by-google-android--ud0352", target: "_blank"
-      li MVVM
-      ul
-        li = link_to "Jetpack Official", "https://developer.android.com/jetpack/docs/guide", target: "_blank"
-        li
-           = link_to "https://www.youtube.com/watch?v=ijXjCtCXcN4", target: "_blank" do
-              | YouTube - Model View View-Model (MVVM): Getting Started
-           br
-           | Java
-        li = link_to "YouTube - Reso Coder 1", "https://www.youtube.com/watch?v=_T4zjIEkGOM", target: "_blank"
-        li = link_to "YouTube - Reso Coder 2", "https://www.youtube.com/watch?v=d7UxPYxgBoA", target: "_blank"
-
-      li
-        | Kotlin
-      ul
-        li Coroutine
-        li 拡張関数 (Extension)
-        li Delegation (by)
-        li Data - 完全に忘れてた
-        li also
-      li テスト (Test)
-      li Jetpack (AndroidX)
-      ul
-        li Lifecycles
-        li ViewModel
-        li LiveData
-        li Room
-      li Firebase
-      ul
-        li Test Lab
-        li Notification
-      li Networking (Retrofit + OkHttp)
-      ul
-        li = link_to "Retrofit 2 with Kotlin", "https://qiita.com/SYABU555/items/3b280a8e81d2cc897383", target: "_blank"
-      li CircleCI
-
+          | API Document (old)
