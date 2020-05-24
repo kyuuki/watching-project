@@ -1,7 +1,5 @@
 .row
   .col
-    h1.mt-4 見守りアプリ (Watching)
-
     h2.my-4 Policy
 
     ul
@@ -13,6 +11,26 @@
       li
         | （裏テーマ）ライフログアプリのベースにする
 
+    h2.mt-4 Management
+
+    ul
+      li
+        = link_to "https://play.google.com/apps/publish/", target: "_blank" do
+          | Google Play Console
+      li
+        = link_to "https://drive.google.com/drive/folders/1ipPXwNsiX-Mtg8-yQqoSG0fEU39cHA5Q?usp=sharing", target: "_blank" do
+          | Heroku
+        ul
+          li
+            = link_to "https://dashboard.heroku.com/apps/watching-server-production", target: "_blank" do
+              | watching-server-production
+          li
+            = link_to "https://dashboard.heroku.com/apps/watching-server-staging", target: "_blank" do
+              | watching-server-staging
+      li
+        = link_to "https://console.firebase.google.com/u/0/project/watching-android-8d837/overview", target: "_blank" do
+          | Firebase
+        
     h2.mt-4 Documents
 
     ul
